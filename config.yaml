@@ -1,0 +1,13 @@
+baseurl: https://example.com
+disablePathToLower: true
+languageCode: en-us
+title: Julia Evans
+author: Julia Evans
+theme: orange
+disableRSS: true
+author:
+  name: Julia Evans
+taxonomies:
+  category: "categories"
+  juliasection: "juliasections"
+
