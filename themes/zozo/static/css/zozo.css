@@ -15,20 +15,21 @@ Template: https://www.color-hex.com/color-palette/77833
 @charset "UTF-8";
 /*basic styles starts*/
 html {
-  background-color: #4e6789;
+  background-color: #c0c5ce;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
   color: #333333;
-  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
   width: 100%;
-  background-color: #4e6789;
+  background-color: #c0c5ce;
   margin: 0;
   padding: 0;
   letter-spacing: -.003em;
   font-style: normal;
+  font-family: montserrat,sans-serif;
+  font-weight: 1000;
 
 }
 
@@ -36,10 +37,15 @@ p {
   line-height: 1.58em;
   font-weight: 400;
   margin: 0;
+  font-size: 14px;
 }
 
 a {
   text-decoration: none;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 a:link, a:visited {
@@ -69,11 +75,15 @@ hr {
 /*basic styles ends*/
 .main {
   background: #ffffff;
-  width: 800px;
+  width: 75%;
+  min-width: 400px;
   margin: 60px auto 0;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  border-width: 0.1em;
+  border-style: solid;
+  border-color: #1e3456;
 }
 
 
@@ -90,13 +100,13 @@ hr {
 
 /* Article Text Content Style*/
 .content {
-  width: 720px;
+  width: 85%;
   height: auto;
   margin: 0 auto;
 }
 
 .list_with_title .container {
-  width: 720px;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -117,13 +127,6 @@ hr {
   font-family: montserrat,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -webkit-border-top-left-radius: 6px;
-  border-width: 0.1em;
-  border-bottom-style: solid;
-  border-color: #1e3456;
 
 }
 
@@ -185,7 +188,7 @@ hr {
 
 .header {
   width: 720px;
-  padding: 50px 0 140px 0;
+  padding: 50px 0 100px 0;
   margin: 0 auto;
   background-size: cover;
 }
@@ -196,7 +199,7 @@ hr {
 
 .header .site_title_container h1 {
   line-height: 1;
-  margin: 0;
+  margin-left: 20px
 }
 
 .header .site_title_container a {
@@ -206,11 +209,16 @@ hr {
 }
 
 .header .site_title_container .site_title a {
-  font-size: 28px;
-  width: 65px;
+  font-size: 2.5rem;
+  width: 450px;
   letter-spacing: 2px;
   line-height: 1.2;
-  color: #000000;
+  color: #343d46;
+  font-family: montserrat,sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  top: 64px;
 }
 
 .header .site_title_container .site_title a span {
@@ -262,6 +270,8 @@ hr {
 
 .post .post_title {
   padding-bottom: 16px;
+  font-family: montserrat,sans-serif;
+    font-weight: 1000;
 }
 
 .post .post_title h2 {
@@ -321,8 +331,7 @@ hr {
 }
 
 .post .post_footer {
-  padding: 20px 0 40px 0;
-  border-bottom: 1px solid #f3f3f3;
+  margin: 0px 0 25px 0; 
 }
 
 .post .post_footer .meta {
@@ -333,7 +342,7 @@ hr {
 
 .post .post_footer .meta .info {
   float: left;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .post .post_footer .meta .info .date {
@@ -424,6 +433,8 @@ hr {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  font-family: montserrat,sans-serif;
+  font-weight: 1000;
 }
 
 .list_with_title li {
@@ -433,10 +444,11 @@ hr {
 
 .list_with_title .listing_title {
   font-size: 1.4rem;
-  color: #1f1f1f;
-  font-weight: bold;
+  color: #1e3456;
   padding-top: 10px;
   line-height: 2.2em;
+  font-family: montserrat,sans-serif;
+  font-weight: 1000;
 }
 
 .list_with_title .listing {

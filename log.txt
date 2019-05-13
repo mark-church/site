@@ -1,0 +1,404 @@
+LOG:   2019/05/10 14:10:23 Total in 80 ms
+LOG:   2019/05/10 14:10:23 Watching for config changes in /Users/markchurch/proj/site/config.toml
+INFO 2019/05/10 14:11:42 No translation bundle found for default language "en-us"
+INFO 2019/05/10 14:11:42 Translation func for language en-us not found, use default.
+INFO 2019/05/10 14:11:42 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+INFO 2019/05/10 14:11:42 Using config file: 
+INFO 2019/05/10 14:11:42 syncing static files to /
+INFO 2019/05/10 14:11:42 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+LOG:   2019/05/10 14:11:42 Total in 75 ms
+LOG:   2019/05/10 14:11:42 Watching for config changes in /Users/markchurch/proj/site/config.toml
+INFO 2019/05/12 18:36:45 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/12 18:36:45 
+Static file changes detected
+LOG:   2019/05/12 18:36:45 2019-05-12 18:36:45.952 -0700
+INFO 2019/05/12 18:38:05 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/12 18:38:05 
+Static file changes detected
+LOG:   2019/05/12 18:38:05 2019-05-12 18:38:05.939 -0700
+INFO 2019/05/12 18:38:31 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/12 18:38:31 
+Static file changes detected
+LOG:   2019/05/12 18:38:31 2019-05-12 18:38:31.936 -0700
+INFO 2019/05/12 18:40:32 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/12 18:40:32 
+Static file changes detected
+LOG:   2019/05/12 18:40:32 2019-05-12 18:40:32.931 -0700
+INFO 2019/05/12 18:49:07 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": WRITE]
+LOG:   2019/05/12 18:49:07 
+Change detected, rebuilding site
+LOG:   2019/05/12 18:49:07 2019-05-12 18:49:07.423 -0700
+INFO 2019/05/12 18:49:07 No translation bundle found for default language "en-us"
+INFO 2019/05/12 18:49:07 Translation func for language en-us not found, use default.
+INFO 2019/05/12 18:49:07 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/12 18:49:07 Total in 114 ms
+INFO 2019/05/12 18:52:28 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": WRITE]
+LOG:   2019/05/12 18:52:28 
+Change detected, rebuilding site
+LOG:   2019/05/12 18:52:28 2019-05-12 18:52:28.410 -0700
+INFO 2019/05/12 18:52:28 No translation bundle found for default language "en-us"
+INFO 2019/05/12 18:52:28 Translation func for language en-us not found, use default.
+INFO 2019/05/12 18:52:28 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/12 18:52:28 Total in 38 ms
+INFO 2019/05/12 18:53:36 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": WRITE]
+LOG:   2019/05/12 18:53:36 
+Change detected, rebuilding site
+LOG:   2019/05/12 18:53:36 2019-05-12 18:53:36.404 -0700
+INFO 2019/05/12 18:53:36 No translation bundle found for default language "en-us"
+INFO 2019/05/12 18:53:36 Translation func for language en-us not found, use default.
+INFO 2019/05/12 18:53:36 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/12 18:53:36 Total in 35 ms
+INFO 2019/05/12 18:54:44 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": WRITE]
+LOG:   2019/05/12 18:54:44 
+Change detected, rebuilding site
+LOG:   2019/05/12 18:54:44 2019-05-12 18:54:44.400 -0700
+INFO 2019/05/12 18:54:44 No translation bundle found for default language "en-us"
+INFO 2019/05/12 18:54:44 Translation func for language en-us not found, use default.
+INFO 2019/05/12 18:54:44 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/12 18:54:44 Total in 41 ms
+INFO 2019/05/12 18:56:54 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": WRITE]
+LOG:   2019/05/12 18:56:54 
+Change detected, rebuilding site
+LOG:   2019/05/12 18:56:54 2019-05-12 18:56:54.385 -0700
+INFO 2019/05/12 18:56:54 No translation bundle found for default language "en-us"
+INFO 2019/05/12 18:56:54 Translation func for language en-us not found, use default.
+INFO 2019/05/12 18:56:54 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/12 18:56:54 Total in 42 ms
+INFO 2019/05/12 18:57:37 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": WRITE]
+LOG:   2019/05/12 18:57:37 
+Change detected, rebuilding site
+LOG:   2019/05/12 18:57:37 2019-05-12 18:57:37.384 -0700
+INFO 2019/05/12 18:57:37 No translation bundle found for default language "en-us"
+INFO 2019/05/12 18:57:37 Translation func for language en-us not found, use default.
+INFO 2019/05/12 18:57:37 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/12 18:57:37 Total in 45 ms
+INFO 2019/05/12 18:59:18 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": WRITE]
+LOG:   2019/05/12 18:59:18 
+Change detected, rebuilding site
+LOG:   2019/05/12 18:59:18 2019-05-12 18:59:18.377 -0700
+INFO 2019/05/12 18:59:18 No translation bundle found for default language "en-us"
+INFO 2019/05/12 18:59:18 Translation func for language en-us not found, use default.
+INFO 2019/05/12 18:59:18 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/12 18:59:18 Total in 42 ms
+INFO 2019/05/12 18:59:44 No translation bundle found for default language "en-us"
+INFO 2019/05/12 18:59:44 Translation func for language en-us not found, use default.
+INFO 2019/05/12 18:59:44 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+INFO 2019/05/12 18:59:44 Using config file: 
+INFO 2019/05/12 18:59:44 syncing static files to /
+INFO 2019/05/12 18:59:44 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+LOG:   2019/05/12 18:59:44 Total in 76 ms
+LOG:   2019/05/12 18:59:44 Watching for config changes in /Users/markchurch/proj/site/config.toml
+INFO 2019/05/12 19:02:23 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": WRITE]
+LOG:   2019/05/12 19:02:23 
+Change detected, rebuilding site
+LOG:   2019/05/12 19:02:23 2019-05-12 19:02:23.910 -0700
+INFO 2019/05/12 19:02:23 No translation bundle found for default language "en-us"
+INFO 2019/05/12 19:02:23 Translation func for language en-us not found, use default.
+INFO 2019/05/12 19:02:23 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/12 19:02:23 Total in 44 ms
+INFO 2019/05/13 08:59:08 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/index.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/index.html": WRITE]
+LOG:   2019/05/13 08:59:08 
+Change detected, rebuilding site
+LOG:   2019/05/13 08:59:08 2019-05-13 08:59:08.858 -0700
+INFO 2019/05/13 08:59:08 No translation bundle found for default language "en-us"
+INFO 2019/05/13 08:59:08 Translation func for language en-us not found, use default.
+INFO 2019/05/13 08:59:08 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 08:59:08 Total in 113 ms
+INFO 2019/05/13 09:04:00 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/index.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/index.html": WRITE]
+LOG:   2019/05/13 09:04:00 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:04:00 2019-05-13 09:04:00.834 -0700
+INFO 2019/05/13 09:04:00 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:04:00 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:04:00 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:04:00 Total in 32 ms
+INFO 2019/05/13 09:04:29 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/index.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/index.html": WRITE]
+LOG:   2019/05/13 09:04:29 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:04:29 2019-05-13 09:04:29.831 -0700
+INFO 2019/05/13 09:04:29 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:04:29 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:04:29 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:04:29 Total in 37 ms
+INFO 2019/05/13 09:04:43 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/index.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/index.html": WRITE]
+LOG:   2019/05/13 09:04:43 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:04:43 2019-05-13 09:04:43.831 -0700
+INFO 2019/05/13 09:04:43 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:04:43 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:04:43 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:04:43 Total in 33 ms
+INFO 2019/05/13 09:09:52 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/index.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/index.html": WRITE]
+LOG:   2019/05/13 09:09:52 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:09:52 2019-05-13 09:09:52.808 -0700
+INFO 2019/05/13 09:09:52 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:09:52 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:09:52 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:09:52 Total in 43 ms
+INFO 2019/05/13 09:12:16 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/index.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/index.html": WRITE]
+LOG:   2019/05/13 09:12:16 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:12:16 2019-05-13 09:12:16.797 -0700
+INFO 2019/05/13 09:12:16 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:12:16 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:12:16 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:12:16 Total in 35 ms
+INFO 2019/05/13 09:12:45 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/index.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/index.html": WRITE]
+LOG:   2019/05/13 09:12:45 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:12:45 2019-05-13 09:12:45.794 -0700
+INFO 2019/05/13 09:12:45 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:12:45 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:12:45 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:12:45 Total in 40 ms
+INFO 2019/05/13 09:13:02 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/index.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/index.html": WRITE]
+LOG:   2019/05/13 09:13:02 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:13:02 2019-05-13 09:13:02.794 -0700
+INFO 2019/05/13 09:13:02 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:13:02 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:13:02 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:13:02 Total in 33 ms
+INFO 2019/05/13 09:14:07 Received System Events: ["/Users/markchurch/proj/site/content/posts/2019-04-29-college-major-stress.markdown": CHMOD "/Users/markchurch/proj/site/content/posts/2019-04-29-college-major-stress.markdown": WRITE "/Users/markchurch/proj/site/content/posts/2019-04-29-college-major-stress.markdown": WRITE]
+LOG:   2019/05/13 09:14:07 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:14:07 2019-05-13 09:14:07.786 -0700
+INFO 2019/05/13 09:14:07 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+LOG:   2019/05/13 09:14:07 Total in 24 ms
+INFO 2019/05/13 09:14:09 Received System Events: ["/Users/markchurch/proj/site/content/posts/2019-04-29-college-major-stress.markdown": CHMOD]
+INFO 2019/05/13 09:14:13 Received System Events: ["/Users/markchurch/proj/site/content/posts/2019-04-30-acceleration-of-change.markdown": CHMOD "/Users/markchurch/proj/site/content/posts/2019-04-30-acceleration-of-change.markdown": WRITE]
+LOG:   2019/05/13 09:14:13 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:14:13 2019-05-13 09:14:13.788 -0700
+INFO 2019/05/13 09:14:13 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+LOG:   2019/05/13 09:14:13 Total in 17 ms
+INFO 2019/05/13 09:14:15 Received System Events: ["/Users/markchurch/proj/site/content/posts/2019-04-30-acceleration-of-change.markdown": CHMOD]
+INFO 2019/05/13 09:14:22 Received System Events: ["/Users/markchurch/proj/site/content/posts/english-preview.md": RENAME]
+LOG:   2019/05/13 09:14:22 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:14:22 2019-05-13 09:14:22.790 -0700
+INFO 2019/05/13 09:14:22 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+LOG:   2019/05/13 09:14:22 Total in 12 ms
+INFO 2019/05/13 09:14:27 Received System Events: ["/Users/markchurch/proj/site/content/posts/theme-preview.md": RENAME]
+LOG:   2019/05/13 09:14:27 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:14:27 2019-05-13 09:14:27.787 -0700
+INFO 2019/05/13 09:14:27 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+LOG:   2019/05/13 09:14:27 Total in 10 ms
+INFO 2019/05/13 09:14:47 Received System Events: ["/Users/markchurch/proj/site/content/posts/2019-04-30-acceleration-of-change.markdown": CHMOD "/Users/markchurch/proj/site/content/posts/2019-04-30-acceleration-of-change.markdown": WRITE "/Users/markchurch/proj/site/content/posts/2019-04-30-acceleration-of-change.markdown": WRITE "/Users/markchurch/proj/site/content/posts/2019-04-30-acceleration-of-change.markdown": WRITE]
+LOG:   2019/05/13 09:14:47 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:14:47 2019-05-13 09:14:47.785 -0700
+INFO 2019/05/13 09:14:47 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+LOG:   2019/05/13 09:14:47 Total in 15 ms
+INFO 2019/05/13 09:14:49 Received System Events: ["/Users/markchurch/proj/site/content/posts/2019-04-30-acceleration-of-change.markdown": CHMOD]
+INFO 2019/05/13 09:15:51 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/index.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/index.html": WRITE]
+LOG:   2019/05/13 09:15:51 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:15:51 2019-05-13 09:15:51.783 -0700
+INFO 2019/05/13 09:15:51 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:15:51 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:15:51 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:15:51 Total in 32 ms
+INFO 2019/05/13 09:17:07 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:17:07 
+Static file changes detected
+LOG:   2019/05/13 09:17:07 2019-05-13 09:17:07.774 -0700
+INFO 2019/05/13 09:20:49 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/header.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/header.html": WRITE]
+LOG:   2019/05/13 09:20:49 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:20:49 2019-05-13 09:20:49.759 -0700
+INFO 2019/05/13 09:20:49 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:20:49 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:20:49 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:20:49 Total in 45 ms
+INFO 2019/05/13 09:24:36 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:24:36 
+Static file changes detected
+LOG:   2019/05/13 09:24:36 2019-05-13 09:24:36.742 -0700
+INFO 2019/05/13 09:24:45 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE|CHMOD]
+LOG:   2019/05/13 09:24:45 
+Static file changes detected
+LOG:   2019/05/13 09:24:45 2019-05-13 09:24:45.742 -0700
+INFO 2019/05/13 09:27:34 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:27:34 
+Static file changes detected
+LOG:   2019/05/13 09:27:34 2019-05-13 09:27:34.729 -0700
+INFO 2019/05/13 09:28:05 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:28:05 
+Static file changes detected
+LOG:   2019/05/13 09:28:05 2019-05-13 09:28:05.725 -0700
+INFO 2019/05/13 09:28:22 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:28:22 
+Static file changes detected
+LOG:   2019/05/13 09:28:22 2019-05-13 09:28:22.722 -0700
+INFO 2019/05/13 09:30:57 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:30:57 
+Static file changes detected
+LOG:   2019/05/13 09:30:57 2019-05-13 09:30:57.711 -0700
+INFO 2019/05/13 09:37:35 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:37:35 
+Static file changes detected
+LOG:   2019/05/13 09:37:35 2019-05-13 09:37:35.681 -0700
+INFO 2019/05/13 09:37:41 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:37:41 
+Static file changes detected
+LOG:   2019/05/13 09:37:41 2019-05-13 09:37:41.679 -0700
+INFO 2019/05/13 09:38:03 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:38:03 
+Static file changes detected
+LOG:   2019/05/13 09:38:03 2019-05-13 09:38:03.676 -0700
+INFO 2019/05/13 09:38:26 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/partials/post.html": WRITE]
+LOG:   2019/05/13 09:38:26 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:38:26 2019-05-13 09:38:26.677 -0700
+INFO 2019/05/13 09:38:26 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:38:26 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:38:26 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:38:26 Total in 38 ms
+INFO 2019/05/13 09:39:03 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/_default/single.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/_default/single.html": WRITE]
+LOG:   2019/05/13 09:39:03 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:39:03 2019-05-13 09:39:03.671 -0700
+INFO 2019/05/13 09:39:03 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:39:03 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:39:03 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:39:03 Total in 36 ms
+INFO 2019/05/13 09:39:38 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/_default/single.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/_default/single.html": WRITE]
+LOG:   2019/05/13 09:39:38 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:39:38 2019-05-13 09:39:38.669 -0700
+INFO 2019/05/13 09:39:38 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:39:38 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:39:38 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:39:38 Total in 35 ms
+INFO 2019/05/13 09:40:12 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/_default/single.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/_default/single.html": WRITE]
+LOG:   2019/05/13 09:40:12 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:40:12 2019-05-13 09:40:12.671 -0700
+INFO 2019/05/13 09:40:12 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:40:12 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:40:12 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:40:12 Total in 35 ms
+INFO 2019/05/13 09:40:49 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/_default/single.html": CHMOD "/Users/markchurch/proj/site/themes/zozo/layouts/_default/single.html": WRITE]
+LOG:   2019/05/13 09:40:49 
+Change detected, rebuilding site
+LOG:   2019/05/13 09:40:49 2019-05-13 09:40:49.667 -0700
+INFO 2019/05/13 09:40:49 No translation bundle found for default language "en-us"
+INFO 2019/05/13 09:40:49 Translation func for language en-us not found, use default.
+INFO 2019/05/13 09:40:49 i18n not initialized; if you need string translations, check that you have a bundle in /i18n that matches the site language or the default language.
+LOG:   2019/05/13 09:40:49 Total in 29 ms
+INFO 2019/05/13 09:40:50 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/layouts/_default/single.html": CHMOD]
+INFO 2019/05/13 09:43:37 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:43:37 
+Static file changes detected
+LOG:   2019/05/13 09:43:37 2019-05-13 09:43:37.655 -0700
+INFO 2019/05/13 09:43:55 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE|CHMOD]
+LOG:   2019/05/13 09:43:55 
+Static file changes detected
+LOG:   2019/05/13 09:43:55 2019-05-13 09:43:55.651 -0700
+INFO 2019/05/13 09:44:28 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:44:28 
+Static file changes detected
+LOG:   2019/05/13 09:44:28 2019-05-13 09:44:28.650 -0700
+INFO 2019/05/13 09:45:05 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:45:05 
+Static file changes detected
+LOG:   2019/05/13 09:45:05 2019-05-13 09:45:05.649 -0700
+INFO 2019/05/13 09:45:58 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:45:58 
+Static file changes detected
+LOG:   2019/05/13 09:45:58 2019-05-13 09:45:58.642 -0700
+INFO 2019/05/13 09:46:10 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:46:10 
+Static file changes detected
+LOG:   2019/05/13 09:46:10 2019-05-13 09:46:10.641 -0700
+INFO 2019/05/13 09:46:34 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:46:34 
+Static file changes detected
+LOG:   2019/05/13 09:46:34 2019-05-13 09:46:34.641 -0700
+INFO 2019/05/13 09:51:12 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:51:12 
+Static file changes detected
+LOG:   2019/05/13 09:51:12 2019-05-13 09:51:12.617 -0700
+INFO 2019/05/13 09:51:16 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:51:16 
+Static file changes detected
+LOG:   2019/05/13 09:51:16 2019-05-13 09:51:16.618 -0700
+INFO 2019/05/13 09:51:52 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:51:52 
+Static file changes detected
+LOG:   2019/05/13 09:51:52 2019-05-13 09:51:52.615 -0700
+INFO 2019/05/13 09:52:22 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:52:22 
+Static file changes detected
+LOG:   2019/05/13 09:52:22 2019-05-13 09:52:22.615 -0700
+INFO 2019/05/13 09:53:52 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:53:52 
+Static file changes detected
+LOG:   2019/05/13 09:53:52 2019-05-13 09:53:52.608 -0700
+INFO 2019/05/13 09:55:55 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:55:55 
+Static file changes detected
+LOG:   2019/05/13 09:55:55 2019-05-13 09:55:55.598 -0700
+INFO 2019/05/13 09:56:27 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:56:27 
+Static file changes detected
+LOG:   2019/05/13 09:56:27 2019-05-13 09:56:27.592 -0700
+INFO 2019/05/13 09:56:39 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:56:39 
+Static file changes detected
+LOG:   2019/05/13 09:56:39 2019-05-13 09:56:39.593 -0700
+INFO 2019/05/13 09:56:47 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:56:47 
+Static file changes detected
+LOG:   2019/05/13 09:56:47 2019-05-13 09:56:47.593 -0700
+INFO 2019/05/13 09:56:59 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:56:59 
+Static file changes detected
+LOG:   2019/05/13 09:56:59 2019-05-13 09:56:59.591 -0700
+INFO 2019/05/13 09:57:28 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:57:28 
+Static file changes detected
+LOG:   2019/05/13 09:57:28 2019-05-13 09:57:28.589 -0700
+INFO 2019/05/13 09:57:51 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:57:51 
+Static file changes detected
+LOG:   2019/05/13 09:57:51 2019-05-13 09:57:51.590 -0700
+INFO 2019/05/13 09:58:42 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:58:42 
+Static file changes detected
+LOG:   2019/05/13 09:58:42 2019-05-13 09:58:42.582 -0700
+INFO 2019/05/13 09:58:55 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:58:55 
+Static file changes detected
+LOG:   2019/05/13 09:58:55 2019-05-13 09:58:55.585 -0700
+INFO 2019/05/13 09:59:02 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:59:02 
+Static file changes detected
+LOG:   2019/05/13 09:59:02 2019-05-13 09:59:02.583 -0700
+INFO 2019/05/13 09:59:22 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:59:22 
+Static file changes detected
+LOG:   2019/05/13 09:59:22 2019-05-13 09:59:22.582 -0700
+INFO 2019/05/13 09:59:43 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:59:43 
+Static file changes detected
+LOG:   2019/05/13 09:59:43 2019-05-13 09:59:43.579 -0700
+INFO 2019/05/13 09:59:52 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 09:59:52 
+Static file changes detected
+LOG:   2019/05/13 09:59:52 2019-05-13 09:59:52.580 -0700
+INFO 2019/05/13 10:00:02 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 10:00:02 
+Static file changes detected
+LOG:   2019/05/13 10:00:02 2019-05-13 10:00:02.576 -0700
+INFO 2019/05/13 10:00:16 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 10:00:16 
+Static file changes detected
+LOG:   2019/05/13 10:00:16 2019-05-13 10:00:16.575 -0700
+INFO 2019/05/13 10:01:06 Received System Events: ["/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": CHMOD "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE "/Users/markchurch/proj/site/themes/zozo/static/css/zozo.css": WRITE]
+LOG:   2019/05/13 10:01:06 
+Static file changes detected
+LOG:   2019/05/13 10:01:06 2019-05-13 10:01:06.571 -0700

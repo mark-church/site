@@ -1,8 +1,8 @@
 ---
-title: "Don't stress over your college major, it's irrelevant"
+title: "don't stress over your college major, it's irrelevant"
 date: 2019-04-29T14:35:19-07:00
 draft: false
-tags: ["Life"]
+tags: ["life"]
 ---
 
 Until you’re 22 or 23 your life is like a video game. Once you leave the introductory level of daycare that teaches you the what the buttons do (run, jump, kick, poop) you start on the first level of this video game — elementary school. From that point forward you’re leveling up. Everybody that started with you is (mostly) leveling up along with you on the same path and rate. You don’t even have to be that good to get to the next level, just don’t completely screw it up and they’ll let you move forward with everybody else.

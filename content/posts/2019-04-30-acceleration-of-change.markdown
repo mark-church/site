@@ -1,8 +1,8 @@
 ---
-title: "The Acceleration of Change"
+title: "the rate of change"
 date: 2019-04-30T14:35:19-07:00
 draft: false
-tags: ["Life", "Economics"]
+tags: ["business", "technology"]
 ---
 
 The world is changing faster every day - that's a quote that people say a lot these days. I've never heard anyone dispute it. People generally accept it as an unfortunate fact and shrug it off, like we accept that weather gets worse in the winter. Between news about artificial intelligence, reusable space rockets, and ever thinner computers it certainly seems like the world is changing faster than ever, but is it actually? Or does it just feel like it?
