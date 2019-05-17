@@ -9,7 +9,7 @@ The world is changing faster every day - that's a quote that people say a lo
 
 Let's follow a thought experiment introduced by Northwestern Economics professor Robert Gordon.
 
-It goes like this ….
+It goes like this …..
 
 - Imagine that it's 1910 and you are a mailman. A package arriving from the other coast may take a week by train before you deliver it by hand via an early model-T. One day you slip on ice, hit your head, and go in to a 50 year coma.
 Now you've woken up an old man or woman in the year 1960. In a confused state, you leave the hospital to continue your mail route. You find that the model-T has been replaced with a much faster and more reliable mail truck that can go 60 MPH. Mail can be shipped quickly to almost any city in the US using trucking on the interstate system and packages from Europe now arrive on jets overnight. Standardized shipping containers make the delivery of goods even faster, allowing anything to be sent by ship, truck, or rail. Telephones are owned by every person in America, allowing any two people to communicate easily and cheaply without using mail at all.
