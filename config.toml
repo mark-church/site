@@ -2,7 +2,7 @@ baseURL = "https://example.com"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
 title = "Mark Church"                    # site title  # 网站标题
-theme = "zozo"
+theme = "church"
 summaryLength = 100
 paginate = 4                         # shows the number of articles  # 首页显示文章数量
 enableEmoji = true
@@ -43,8 +43,6 @@ disqusShortname = ""                 # your discuss shortname
   keywords = ["Hugo", "theme","zozo"]                                  # site's keywords  # 网站关键字
   description = "Hugo theme zozo example site."                        # site's description  # 网站描述
 
-# mathjax
-  enableMathJax = false                                                
 
   enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
   
