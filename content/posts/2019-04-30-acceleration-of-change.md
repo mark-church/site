@@ -1,7 +1,7 @@
 ---
 title: "the rate of change"
 date: 2019-04-30T14:35:19-07:00
-draft: false
+draft: true
 tags: ["business", "technology"]
 ---
 

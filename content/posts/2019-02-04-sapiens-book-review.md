@@ -1,7 +1,7 @@
 ---
 title: "book review: sapiens - a brief history of mankind"
-date: 2019-02-04T14:35:19-07:00
-draft: false
+date: 2018-12-10T14:35:19-07:00
+draft: true
 tags: ["life","business","book review"]
 ---
 
