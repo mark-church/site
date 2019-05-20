@@ -1,0 +1,9 @@
+[Unit]
+Description=Hugo Server
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/hugo server --bind "0.0.0.0" -p 80 -b "markchur.ch"
+
+[Install]
+WantedBy=multi-user.target
