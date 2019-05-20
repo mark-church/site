@@ -187,8 +187,8 @@ hr {
 }
 
 .header {
-  width: 720px;
-  padding: 50px 0 100px 0;
+  width: 100%;
+  padding: 25px 0 75px 0;
   margin: 0 auto;
   background-size: cover;
 }
@@ -218,7 +218,7 @@ hr {
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
-  top: 64px;
+  top: 38px;
 }
 
 .header .site_title_container .site_title a span {

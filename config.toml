@@ -1,15 +1,15 @@
 baseURL = "markchur.ch"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "Mark Church"                    # site title  # 网站标题
+title = "Mark Church"                    
 theme = "church"
 summaryLength = 100
-paginate = 4                         # shows the number of articles  # 首页显示文章数量
+paginate = 4                         
 enableEmoji = true
-googleAnalytics = ""                 # your google analytics id
-disqusShortname = ""                 # your discuss shortname
+googleAnalytics = ""                 
+disqusShortname = ""                 
 
-[author]                             # essential                     # 必需
+[author]                           
   name = "Church"
 
 [blackfriday]
@@ -38,17 +38,13 @@ disqusShortname = ""                 # your discuss shortname
   url = "/links/"
 
 [params]
-  subTitle = "the site subtitle"                                       # site's subTitle  # 网站二级标题
-  footerSlogan = ""                                          # site's footer slogan  # 网站页脚标语
-  keywords = ["Hugo", "theme","zozo"]                                  # site's keywords  # 网站关键字
-  description = "Hugo theme zozo example site."                        # site's description  # 网站描述
+  subTitle = ""                                       
+  footerSlogan = ""                                         
+  keywords = ["Hugo", "theme","zozo"]                                 
+  description = "Mark Church"
 
+  enableSummary = true                       
 
-  enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
-  
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
 [params.valine]
   enable = false
   appId = ""
