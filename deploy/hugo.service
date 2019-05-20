@@ -3,7 +3,7 @@ Description=Hugo Server
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/hugo server --bind "0.0.0.0" -p 80 -b "markchur.ch"
+ExecStart=/usr/local/bin/hugo server --bind "0.0.0.0" -p 80 -b "markchur.ch" --source /site
 
 [Install]
 WantedBy=multi-user.target
