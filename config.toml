@@ -38,28 +38,13 @@ disqusShortname = ""
   url = "/links/"
 
 [params]
-<<<<<<< HEAD
   subTitle = ""                                       
   footerSlogan = ""                                         
   keywords = ["Hugo", "theme","zozo"]                                 
   description = "Mark Church"
-=======
-  subTitle = ""                                     
-  footerSlogan = ""                                       
-  keywords = ["Hugo", "theme","zozo"]                        
-  description = "Hugo theme zozo example site."             
->>>>>>> ceca000daf8779556c94bf6c79ed74ba00be72bd
 
   enableSummary = true                       
 
-<<<<<<< HEAD
-=======
-  enableSummary = true                                                
-  
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
->>>>>>> ceca000daf8779556c94bf6c79ed74ba00be72bd
 [params.valine]
   enable = false
   appId = ""
