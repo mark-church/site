@@ -50,7 +50,7 @@ Hugo runs as a single binary that binds to an interface and port to serve conten
 With the tutorial, the hugo server can be started easily and accessed on your local browser.
 
 ```
-hugo server
+$ hugo server
 ...
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop

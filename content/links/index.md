@@ -2,10 +2,10 @@
 title: "links"
 date: 2018-12-29T20:24:28+08:00
 hidden: true
-draft: false
+draft: true
 ---
 
-Here are some of my favorite links around the internet. They reflect the topics I'm interested in. Some I've read multiple times or just skimmed and thought it was interesting. 
+Here are some of my favorite links around the internet. 
 
 ## Technology & Science
 
@@ -41,10 +41,6 @@ Here are some of my favorite links around the internet. They reflect the topics 
 ## Money
 - [Stockrow](https://stockrow.com/) - A good site for filtering and comparing different equities
 - [Bigger Pockets](https://www.biggerpockets.com/blog/) - Resources and community for Real Estate investing
-
-## Bookshelf
-- [Sapiens](https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095) by Yuval Noah Harari
-- 
 
 ## Podcasts
 - [Planet Money](https://www.npr.org/sections/money/) - Basically Freakonomics, but delivered weekly as bite sized stories
