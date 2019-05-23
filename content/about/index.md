@@ -2,7 +2,7 @@
 title: "about me"
 date: 2018-12-29T20:24:28+08:00
 hidden: true
-draft: true
+draft: false
 ---
 
 I'm a [product manager](https://www.linkedin.com/in/markac/) in the software infrastructure and networking space. I've always been impressed by people who write content about their profession and interests. I realized two things that finally helped me start doing it myself:
