@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mark Church</title>
-    <link>markchur.ch/tags/</link>
+    <link>http://markchur.ch/tags/</link>
     <description>Recent content in Tags on Mark Church</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 May 2019 01:01:19 -0700</lastBuildDate>
     
-	<atom:link href="markchur.ch/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://markchur.ch/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>technology</title>
-      <link>markchur.ch/tags/technology/</link>
+      <link>http://markchur.ch/tags/technology/</link>
       <pubDate>Mon, 20 May 2019 01:01:19 -0700</pubDate>
       
-      <guid>markchur.ch/tags/technology/</guid>
+      <guid>http://markchur.ch/tags/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>life</title>
-      <link>markchur.ch/tags/life/</link>
+      <link>http://markchur.ch/tags/life/</link>
       <pubDate>Mon, 10 Dec 2018 14:35:19 -0700</pubDate>
       
-      <guid>markchur.ch/tags/life/</guid>
+      <guid>http://markchur.ch/tags/life/</guid>
       <description></description>
     </item>
     

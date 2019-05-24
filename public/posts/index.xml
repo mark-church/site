@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mark Church</title>
-    <link>markchur.ch/posts/</link>
+    <link>http://markchur.ch/posts/</link>
     <description>Recent content in Posts on Mark Church</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 May 2019 01:01:19 -0700</lastBuildDate>
     
-	<atom:link href="markchur.ch/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://markchur.ch/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>building a blog part 1: deploying hugo</title>
-      <link>markchur.ch/posts/2019-05-20-building-a-blog-part-1/</link>
+      <link>http://markchur.ch/posts/2019-05-20-building-a-blog-part-1/</link>
       <pubDate>Mon, 20 May 2019 01:01:19 -0700</pubDate>
       
-      <guid>markchur.ch/posts/2019-05-20-building-a-blog-part-1/</guid>
+      <guid>http://markchur.ch/posts/2019-05-20-building-a-blog-part-1/</guid>
       <description>There are more than a few options out there to host a blog these days. But this is a technical blog and as one of my first posts, I wanted to provide a technical tutorial on how it was deployed and what I learned.
 For this site, I wanted to own the full technical stack, for two reaons:
  to have full control over every functional and design aspect of the site to fully understand how the site software stack works from the operating system on up  The site is only made from open source software so if I wanted to edit some miniscule detail, I have full power to do that.</description>
@@ -24,10 +24,10 @@ For this site, I wanted to own the full technical stack, for two reaons:
     
     <item>
       <title>college majors determine less than you think</title>
-      <link>markchur.ch/posts/2018-12-10-college-major-stress/</link>
+      <link>http://markchur.ch/posts/2018-12-10-college-major-stress/</link>
       <pubDate>Mon, 10 Dec 2018 14:35:19 -0700</pubDate>
       
-      <guid>markchur.ch/posts/2018-12-10-college-major-stress/</guid>
+      <guid>http://markchur.ch/posts/2018-12-10-college-major-stress/</guid>
       <description>Until you’re 22 or 23, life is like a video game. Once you leave the introductory level of daycare that teaches you the what the buttons do (run, jump, kick, poop) you start on the first level of this video game — elementary school. From that point forward you’re leveling up. Everybody that started with you is (mostly) leveling up along with you on the same path and rate. You don’t even have to be that good to get to the next level, just don’t completely screw it up and they’ll let you move forward with everybody else.
 After leveling for a number of years, you hit one of the most exciting parts of the game — college.</description>
     </item>
