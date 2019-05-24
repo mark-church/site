@@ -15,7 +15,7 @@ Template: https://www.color-hex.com/color-palette/77833
 @charset "UTF-8";
 /*basic styles starts*/
 html {
-  background-color: #f0f0f0;
+  background-color: #c0c5ce;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -23,7 +23,7 @@ body {
   color: #333333;
   font-size: 14px;
   width: 100%;
-
+  background-color: #c0c5ce;
   margin: 0;
   padding: 0;
   letter-spacing: -.003em;
@@ -84,9 +84,9 @@ hr {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  border-width: 0.3em;
+  border-width: 0.1em;
   border-style: solid;
-  border-color: #333333;
+  border-color: #1e3456;
 }
 
 
@@ -126,7 +126,7 @@ hr {
   height: 2.8rem;
   margin: 0;
   padding: 0;
-  background-color: #818181;
+  background-color: #eb5858;
   font-family: montserrat,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -165,9 +165,7 @@ hr {
   content: "/";
 }
 
-.nav_container .site_nav a:hover {
-  color: #d0d0d0;
-}
+
 
 /* Figure this shit out later
 .nav_container .site_nav a:link,
@@ -218,7 +216,7 @@ hr {
   width: 450px;
   letter-spacing: 2px;
   line-height: 1.2;
-  color: #333333;
+  color: #343d46;
   font-family: montserrat,sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -231,7 +229,7 @@ hr {
 }
 
 .header .site_title_container .site_title a:hover {
-  color: #818181;
+  color: #666666;
 }
 
 .header .site_title_container .description {
@@ -547,9 +545,9 @@ hr {
 
 .markdown pre,
 .markdown code {
-  font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+  font-family: 'Roboto Mono', Menlo, Monaco, courier, monospace;
   font-size: 0.9em;
-  background: rgba(0,0,0,.84) !important;
+  background: #f8f8f8 !important;
   border: none;
 }
 
