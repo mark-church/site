@@ -8,7 +8,7 @@ tags: ["technology"]
 
 There are more than a few options out there to host a blog these days. But this is a technical blog and as one of my first posts, I wanted to provide a technical tutorial on how it was deployed and what I learned. 
 
-For this site, I wanted to own the full technical stack, for two reaons:
+For this site, I wanted to own the full technical stack, for two reasons:
 
 1. to have full control over every functional and design aspect of the site
 2. to fully understand how the site software stack works from the operating system on up
