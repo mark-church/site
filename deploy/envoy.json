@@ -1,0 +1,62 @@
+{"static_resources": {
+  "listeners": [
+    {
+      "address": { "socket_address": { "address": "0.0.0.0", "port_value": 8001 } },
+      "filter_chains": {
+        "filters": [
+          {
+            "name": "envoy.http_connection_manager",
+            "config": {
+              "stat_prefix": "ingress_http",
+              "http_filters": [{
+                "name": "envoy.router",
+                "config": {}
+              }],
+              "access_log":{
+                "name": "envoy.file_access_log",
+                "config": {
+                  "path": "/var/log/envoy.log",
+                  "json_format": {
+                    "protocol": "%PROTOCOL%",
+                    "duration": "%DURATION%",
+                    "response": "%RESPONSE_CODE%",
+                    "downstream_address": "%DOWNSTREAM_LOCAL_ADDRESS%",
+                    "upstream_address": "%UPSTREAM_HOST%",
+                    "xff": "%REQ(X-FORWARDED-FOR)%",
+                    "referer": "%REQ(REFERER)%",
+                    "method": "%REQ(:METHOD)%",
+                    "path": "%REQ(:PATH)%"
+                    }
+                  }
+              },
+              "route_config": {
+                "virtual_hosts": [
+                  {
+                    "name": "hugo-virtual-host",
+                    "domains": "*",
+                    "routes": [
+                      {
+                        "route": {
+                          "cluster": "hugo-cluster"
+                        },
+                        "match": {
+                          "prefix": "/"
+    }}]}]}}}]}}],
+  "clusters":[
+    {
+      "name": "hugo-cluster",
+      "type": "strict_dns",
+      "lb_policy": "round_robin",
+      "connect_timeout": "1s",
+      "hosts": [
+        { "socket_address": { "address": "localhost", "port_value": 80 }},
+        { "socket_address" : { "address": "localhost", "port_value": 81}}
+      ]
+    }
+  ]
+},
+"admin": {
+  "access_log_path": "/tmp/admin_access.log",
+  "address" : { "socket_address": {"address": "0.0.0.0", "port_value": 8002}}
+}
+}
