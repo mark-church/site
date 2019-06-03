@@ -1,5 +1,5 @@
 ---
-title: "part 1.5: what is the envoy proxy?"
+title: "building a blog part 1.5: what is the envoy proxy?"
 date: 2019-06-02T01:01:19-07:00
 draft: false
 tags: ["technology"]
@@ -10,6 +10,7 @@ tags: ["technology"]
 In part 1 of this series we deployed a very simple blog with a site generation app called Hugo. We did things quick and dirty and used Hugo's built-in development server to serve the content so we were live in less than 15 minutes. Calling it a blog at this point in time would be super generous, but thank you anyways! What we have right now is a bicycle, but what we want is an Airbus A380 (on an open source bicycle budget) . We want a production-grade web service and getting there will be a journey. 
 
 I’m starting the journey by introducing out a few important production characteristics through proxying and load balancing. This addition will already make the site much more reliable. It’ll give us the following goodies:
+
 - High availability through redundancy
 - Resiliency through health checking 
 - Operational data such as health metrics and client access logging
@@ -39,7 +40,7 @@ With envoy’s API, dynamic control of the proxy is straightforward, standardize
 Machine friendly configuration has opened up a whole list of projects that are now building around envoy, in no small part because it’s easy to build around. This includes projects like Istio, Gloo, Ambassador, Contour, and Consul Connect - all designed as control-planes for Envoy. Administrators, orchestration tools (like Consul or K8s), and potentially applications themselves can have the capability to easily manipulate routing.
 
 <div align="center">
-<img src="/images/envoy-config.png">
+<img style="max-width:100%" src="/images/envoy-config.png">
 </div>
 
 ### Hot Restart / Live Reload
@@ -51,12 +52,14 @@ While API-based configuration is rad, hot restarts are also a requirement to run
 The list is long, but by virtue of being the new kid on the block, envoy natively supports tons of modern protocols including HTTP2 and gRPC. Envoy shows its youth by using a lot of modern day standards. The load balancing is also very configurable. Envoy can be zone-aware and load balance based on customizable combinations of factors such as locality, priority, and health. Then there are also the little conveniences like access logs output in JSON that are nice. 
 
 Okay that’s enough gushing for now. In part 2 we’ll deploy envoy as a proxy for this site and start using some of its features. Here are some final thoughts.
+
 - Web proxying and load balancing are critical aspects of making environments production-ready
 - Environments are only getting more dynamic and ephemeral so proxies are adapting to become more dynamic and automatable
 - Envoy is great at both of these ^^
 
 
 Here are some resources I read through while writing this:
+
 - [Envoy project docs](https://www.envoyproxy.io/docs/envoy/latest/)
 - [Envoy hot restart blog post](https://blog.envoyproxy.io/envoy-hot-restart-1d16b14555b5)
 - [Learning Envoy](https://www.envoyproxy.io/learn/)
