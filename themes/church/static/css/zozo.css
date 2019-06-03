@@ -8,10 +8,6 @@ Template: https://www.color-hex.com/color-palette/77833
 */
 
 
-
-
-
-
 @charset "UTF-8";
 /*basic styles starts*/
 html {
@@ -23,7 +19,6 @@ body {
   color: #333333;
   font-size: 14px;
   width: 100%;
-
   margin: 0;
   padding: 0;
   letter-spacing: -.003em;
@@ -31,7 +26,6 @@ body {
   font-family: montserrat,sans-serif;
   font-weight: 1000;
   line-height: 1.5em;
-
 }
 
 p {
@@ -99,7 +93,21 @@ hr {
   -moz-border-radius: 10px;
 }
 
+/*When the screen is less than 600px*/
+@media screen and (max-width: 500px) {
 
+  html {
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+    border-style: none;
+    min-width: 374px;
+    max-width: unset;
+  }
+}
 
 /* Article Text Content Style*/
 .content {
@@ -188,7 +196,7 @@ hr {
 .nav_container .site_nav a {
   white-space: nowrap;
   padding: 10px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .header {
@@ -721,6 +729,20 @@ a.back_to_top:hover span {
     width: 820px;
   }
 }
+
+/*When the screen is less than 600px*/
+@media screen and (max-width: 1000px) {
+
+  html { background-color: #ffffff }
+
+  .main {
+    width: 100%;
+    border-style: none;
+  }
+}
+
+
+
 
 @media screen and (max-width: 900px) {
   .main {

@@ -1,56 +1,63 @@
-admin:
-  access_log_path: /tmp/admin_access.log
-  address:
-    socket_address:
-      address: 0.0.0.0
-      port_value: 8001
+---
 static_resources:
   listeners:
   - address:
       socket_address:
         address: 0.0.0.0
-        port_value: 1313
+        port_value: 81
     filter_chains:
-    - filters:
+      filters:
       - name: envoy.http_connection_manager
-        typed_config:
-          "@type": type.googleapis.com/envoy.config.filter.network.http_connection_manager.v2.HttpConnectionManager
-          codec_type: auto
+        config:
           stat_prefix: ingress_http
-          route_config:
-            name: local_route
-            virtual_hosts:
-            - name: hugo_server
-              domains:
-              - "*"
-              routes:
-              - match:
-                  prefix: "/"
-                route:
-                  cluster: hugo-server
           http_filters:
           - name: envoy.router
+            config: {}
+          access_log:
+            name: envoy.file_access_log
+            config:
+              path: "/var/log/envoy.log"
+              json_format:
+                protocol: "%PROTOCOL%"
+                duration: "%DURATION%"
+                response: "%RESPONSE_CODE%"
+                downstream_address: "%DOWNSTREAM_LOCAL_ADDRESS%"
+                upstream_address: "%UPSTREAM_HOST%"
+                xff: "%REQ(X-FORWARDED-FOR)%"
+                referer: "%REQ(REFERER)%"
+                method: "%REQ(:METHOD)%"
+                path: "%REQ(:PATH)%"
+          route_config:
+            virtual_hosts:
+            - name: hugo-virtual-host
+              domains: "*"
+              routes:
+              - route:
+                  cluster: hugo-cluster
+                match:
+                  prefix: "/"
   clusters:
-    - name: hugo-server
-      connect_timeout: 1s
-      type: logical_dns
-      lb_policy: round_robin
-      load_assignment:
-        cluster_name: hugo-server
-        endpoints:
-        - lb_endpoints:
-          - endpoint:
-              health_check_config:
-                port_value: 1313
-              address:
-                socket_address:
-                  address: hugo-server-1
-                  port_value: 1313
-          - endpoint:
-              health_check_config:
-                port_value: 1313
-              address:
-                socket_address:
-                  address: hugo-server-2
-                  port_value: 1313
-
+  - name: hugo-cluster
+    type: strict_dns
+    lb_policy: round_robin
+    connect_timeout: 1s
+    hosts:
+    - socket_address:
+        address: 10.138.0.3
+        port_value: 50501
+    - socket_address:
+        address: 10.138.0.3
+        port_value: 50502
+    health_checks:
+    - timeout: 2s
+      interval: 10s
+      unhealthy_threshold: 1
+      healthy_threshold: 3
+      http_health_check:
+        path: "/"
+admin:
+  access_log_path: "/tmp/admin_access.log"
+  address:
+    socket_address:
+      address: 0.0.0.0
+      port_value: 8002

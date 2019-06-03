@@ -1,7 +1,7 @@
 {"static_resources": {
   "listeners": [
     {
-      "address": { "socket_address": { "address": "0.0.0.0", "port_value": 8001 } },
+      "address": { "socket_address": { "address": "0.0.0.0", "port_value": 81 } },
       "filter_chains": {
         "filters": [
           {
@@ -17,15 +17,22 @@
                 "config": {
                   "path": "/var/log/envoy.log",
                   "json_format": {
-                    "protocol": "%PROTOCOL%",
-                    "duration": "%DURATION%",
-                    "response": "%RESPONSE_CODE%",
-                    "downstream_address": "%DOWNSTREAM_LOCAL_ADDRESS%",
-                    "upstream_address": "%UPSTREAM_HOST%",
-                    "xff": "%REQ(X-FORWARDED-FOR)%",
-                    "referer": "%REQ(REFERER)%",
+                    "start_time": "%START_TIME%",
                     "method": "%REQ(:METHOD)%",
-                    "path": "%REQ(:PATH)%"
+                    "path": "%REQ(X-ENVOY-ORIGINAL-PATH?:PATH)%",
+                    "protocol": "%PROTOCOL%",
+                    "response_code": "%RESPONSE_CODE%",
+                    "response_flags": "%RESPONSE_FLAGS%",
+                    "bytes_rcvd": "%BYTES_RECEIVED%",
+                    "bytes_snt": "%BYTES_SENT%",
+                    "duration": "%DURATION%",
+                    "x-envoy-upstream-svc-time": "%RESP(X-ENVOY-UPSTREAM-SERVICE-TIME)%",
+                    "xff": "%REQ(X-FORWARDED-FOR)%",
+                    "user_agent": "%REQ(USER-AGENT)%",
+                    "x-request-id": "%REQ(X-REQUEST-ID)%",
+                    "backend_address": "%UPSTREAM_HOST%",
+                    "client": "%DOWNSTREAM_REMOTE_ADDRESS%",            
+                    "referer": "%REQ(REFERER)%"
                     }
                   }
               },
@@ -48,10 +55,15 @@
       "type": "strict_dns",
       "lb_policy": "round_robin",
       "connect_timeout": "1s",
-      "hosts": [
-        { "socket_address": { "address": "localhost", "port_value": 80 }},
-        { "socket_address" : { "address": "localhost", "port_value": 81}}
-      ]
+      "hosts": [{ "socket_address": { "address": "10.138.0.3", "port_value": 50501 }}],
+      "health_checks": [
+        {
+          "timeout": "2s",
+          "interval": "10s",
+          "unhealthy_threshold": 1,
+          "healthy_threshold": 3,
+          "http_health_check": {"path": "/"}
+        }]
     }
   ]
 },
