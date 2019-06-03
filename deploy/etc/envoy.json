@@ -1,7 +1,7 @@
 {"static_resources": {
   "listeners": [
     {
-      "address": { "socket_address": { "address": "0.0.0.0", "port_value": 81 } },
+      "address": { "socket_address": { "address": "0.0.0.0", "port_value": 80 } },
       "filter_chains": {
         "filters": [
           {
@@ -31,7 +31,7 @@
                     "user_agent": "%REQ(USER-AGENT)%",
                     "x-request-id": "%REQ(X-REQUEST-ID)%",
                     "backend_address": "%UPSTREAM_HOST%",
-                    "client": "%DOWNSTREAM_REMOTE_ADDRESS%",            
+                    "client": "%DOWNSTREAM_REMOTE_ADDRESS%",
                     "referer": "%REQ(REFERER)%"
                     }
                   }
@@ -55,7 +55,7 @@
       "type": "strict_dns",
       "lb_policy": "round_robin",
       "connect_timeout": "1s",
-      "hosts": [{ "socket_address": { "address": "10.138.0.3", "port_value": 50501 }}],
+      "hosts": [{ "socket_address": { "address": "localhost", "port_value": 8080 }}],
       "health_checks": [
         {
           "timeout": "2s",

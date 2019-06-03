@@ -1,10 +1,8 @@
 server {
-    listen       80 default_server;
-    server_name  localhost;
+    listen       81;
+    server_name  markchur.ch localhost ;
 
-    access_log  /var/log/nginx/host.access.log  main;
-
-    root   /root/public_html;
+    root   /var/www/markchur.ch-dev;
     index  index.html;
 
     location / {

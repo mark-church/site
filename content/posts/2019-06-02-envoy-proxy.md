@@ -5,7 +5,7 @@ draft: false
 tags: ["technology"]
 ---
 
->This post began as part 2 but after crossing several pages just explaining why envoy was special, it was obvious that the answer to “why envoy?” deserved to stand on its own, giving us part 1.5.
+>This post began as part 2 but after crossing several pages just explaining what envoy is, it was obvious this answer deserved to stand on its own, giving us part 1.5.
 
 In part 1 of this series we deployed a very simple blog with a site generation app called Hugo. We did things quick and dirty and used Hugo's built-in development server to serve the content so we were live in less than 15 minutes. Calling it a blog at this point in time would be super generous, but thank you anyways! What we have right now is a bicycle, but what we want is an Airbus A380 (on an open source bicycle budget) . We want a production-grade web service and getting there will be a journey. 
 
@@ -20,7 +20,7 @@ These capabilities could be provided through a lot of different tools, so I’ll
 
 ## Why Envoy?
 
-Envoy is yet another web proxy, but it does not focus on being a more performant version of its predecessors (like its predecessors were to theirs). Instead, envoy focuses on improving other operational areas. The improvements have opened up entirely new ways of running a proxy, bringing innovative ways to do all kinds of seemingly unrelated things like monitoring, deployment, security, and service discovery. 
+Envoy is yet another web proxy, but it does not focus on being a more performant version of its predecessors (like its predecessors were to theirs). Instead, envoy focuses on improving other operational areas. These operational improvements of running a proxy have resulted in innovation of all kinds of seemingly unrelated areas like monitoring, deployment, security, and service discovery. Here are three areas where envoy really excells. 
 
 ### API Driven Configuration
 
@@ -33,7 +33,7 @@ This is one of the most powerful features of envoy. The state of the envoy confi
 
 Nowadays web backends are very dynamic resources themselves. They will scale up and down, change IP addresses, and run across multiple datacenters concurrently. Web proxy configurations must change frequently to handle this and text-based configuration is just not automatable enough. 
 
-To give an example for why this has been difficult in the past, just take a look at the number of different kubernetes [nginx](https://github.com/kubernetes/ingress-nginx) [ingress](https://github.com/nginxinc/kubernetes-ingress) [controllers](https://github.com/ehazlett/interlock) that exist to solve the fundamentally the same problem. same problem. They are taking a standard API (the K8s ingress API) and translating it to a templated text file for the web proxy to consume. Templating and applying these config files turns out to be cumbersome which reduces the scale that it can be done at.  (No dig against nginx - these controllers were solving for dynamic configuration long before envoy even existed).
+To give an example for why this has been difficult in the past, just take a look at the number of different kubernetes [nginx](https://github.com/kubernetes/ingress-nginx) [ingress](https://github.com/nginxinc/kubernetes-ingress) [controllers](https://github.com/ehazlett/interlock) that exist to solve the fundamentally the same problem. They are taking a standard API (the K8s ingress API) and translating it to a templated text file for the web proxy to consume. Templating and applying these config files turns out to be cumbersome which reduces the scale that it can be done at.  (No dig against nginx - these controllers were solving for dynamic configuration long before envoy even existed).
 
 With envoy’s API, dynamic control of the proxy is straightforward, standardized, and scalable. The ability to fully automate a control-plane across a fleet of proxies (i.e. service mesh) is much more realistic thanks to this. 
 
@@ -55,7 +55,7 @@ Okay that’s enough gushing for now. In part 2 we’ll deploy envoy as a proxy 
 
 - Web proxying and load balancing are critical aspects of making environments production-ready
 - Environments are only getting more dynamic and ephemeral so proxies are adapting to become more dynamic and automatable
-- Envoy is great at both of these ^^
+- _Envoy is great at both of these ^^_
 
 
 Here are some resources I read through while writing this:
