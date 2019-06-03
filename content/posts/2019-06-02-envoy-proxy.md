@@ -5,7 +5,7 @@ draft: false
 tags: ["technology"]
 ---
 
->This post began as part 2 but after crossing several pages just explaining what envoy is, it was obvious this answer deserved to stand on its own, giving us part 1.5.
+>_This post began as part 2 but after crossing several pages just explaining what envoy is, it was obvious this answer deserved to stand on its own, giving us part 1.5._
 
 In part 1 of this series we deployed a very simple blog with a site generation app called Hugo. We did things quick and dirty and used Hugo's built-in development server to serve the content so we were live in less than 15 minutes. Calling it a blog at this point in time would be super generous, but thank you anyways! What we have right now is a bicycle, but what we want is an Airbus A380 (on an open source bicycle budget) . We want a production-grade web service and getting there will be a journey. 
 
