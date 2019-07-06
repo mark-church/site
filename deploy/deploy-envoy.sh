@@ -1,20 +1,3 @@
-#!/bin/sh
-
-sudo apt-get update 
-sudo apt-get install -y git nginx
-
-git clone https://github.com/mark-church/site.git
-
-sudo mkdir /var/www/markchur.ch
-sudo cp -r ./site/public/* /var/www/markchur.ch/
-sudo cp ./site/deploy/etc/nginx/sites-available/markchur.ch-8080-prod /etc/nginx/sites-available
-sudo cp ./site/deploy/etc/nginx/nginx.conf /etc/nginx/nginx.conf 
-
-sudo rm /etc/nginx/sites-enabled/default
-sudo ln -s /etc/nginx/sites-available/markchur.ch-8080-prod /etc/nginx/sites-enabled/
-sudo nginx -s reload
-
-
 
 #Starts the first hugo server
 docker run -it --rm --network envoy-net  --name hugo-server-1 -v $(pwd):/site devopsdays/docker-hugo-server hugo --renderToDisk=true --watch=true --bind="0.0.0.0" --baseURL="${VIRTUAL_HOST}" server /site

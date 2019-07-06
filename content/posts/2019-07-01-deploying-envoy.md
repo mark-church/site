@@ -1,3 +1,10 @@
+---
+title: "building a blog part 2: deploying the envoy proxy"
+date: 2019-07-07T01:01:19-07:00
+draft: false
+tags: ["technology"]
+---
+
 I’ll be honest that part of my original motivation for creating this site was just to have a real use-case for Envoy. But while looking for ways to shoehorn envoy in to the stack, I actually found a lot of really useful things that I could use it for and so I’m excited to FINALLY get around to deploying it. Let’s get moving!
 
 If you’re just joining us, go back and check out the pre-reading for this post:
@@ -9,7 +16,9 @@ If you’re just joining us, go back and check out the pre-reading for this post
 Before diving in to envoy configuration, let’s take a look at our current architecture. 
 
 
-
+<div align="center">
+<img style="max-width:100%" src="/images/site-arch-with-nginx.png">
+</div>
 
 
 Fortunately, it’s very simple. There is really just one thing going on here and nginx is doing all the work. Nginx is:
@@ -25,12 +34,21 @@ This probably raises a question - why shouldn’t we keep nginx as our frontend 
 
 In most client-server architectures, there is a request flow that looks something like the following. A client sends a request over a network protocol. The server then retrieves files or data from some persistent place and serves them back over the internet. 
 
-This server is also known as a web server, app server, or sometimes just “sever”. At a fundamental level, web servers serve and generate content to be packaged in to network packets. They often do a lot more, including talking to different backend services to compile a response, executing application logic, or generating dynamic content on the fly. Many applications such as Websphere and .NET IIS are themselves web servers tightly integrated with application logic. 
+<div align="center">
+<img style="max-width:100%" src="/images/web-server.png">
+</div>
+
+This is known as a web server, app server, or sometimes just “sever”. At a fundamental level, web servers serve and generate content to be packaged in to network packets. They often do a lot more, including talking to different backend services to compile a response, executing application logic, or generating dynamic content on the fly. Many applications such as Websphere and .NET IIS are themselves web servers tightly integrated with application logic. 
 
 Web proxies (also known as proxies, reverse proxies, proxy servers, and sometimes load balancers) are very similar to web servers, but play a different role. Proxies serve as an intermediary between the client and the server. They rarely generate or serve local content themselves and are rarely the last hop in the request flow. The purpose of a proxy is to offload some functionality such as security, monitoring, and rate limiting from the web server and also add other functionality such as load balancing that is best applied in the network than at the end of a connection.
 
+<div align="center">
+<img style="max-width:100%" src="/images/web-proxy.png">
+</div>
+
+
 Common web servers are nginx, Apache, Msft IIS, and Node.js
-Common web proxies are HAproxy, F5, Citrix ADC, and Envoy!
+Common web proxies are HAproxy, F5, Citrix ADC, and _Envoy_!
 
 Note though that these lists overlap heavily. Many web servers (such as nginx) can also act as fully featured proxies, though their feature sets generally tend to lean in one direction or the other. Envoy, for example, is purely designed to be a hop in the network. It cannot serve static content because it does not know how to talk to a filesystem.
 
@@ -38,6 +56,10 @@ This is the reason why I’m using both a proxy and a web server. Nginx will ser
 
 ## Site Architecture
 Now let’s get to the good stuff. This is the architecture we’re shooting for. Nginx will serve internally on port 8080, a port that is not accessible outside the private network. Envoy will listen on port 80 through a public interface. This is a simplified diagram, but in the future we’ll use the same envoy architecture for multiple application backends.
+
+<div align="center">
+<img style="max-width:100%" src="/images/site-arch-with-envoy.png">
+</div>
 
 ## Deploying Envoy
 Envoy can be configured dynamically through its API and/or through configuration file. For the sake of this tutorial I’m using a [config file](config), but will switch to the API in the future. I’ll step through the relevant pieces.
@@ -99,7 +121,7 @@ $ docker logs envoy
 ```
 ## Running on envoy
 
-Now when we hit the URL, we can see that envoy is the one serving the traffic directly to the user.
+Now when we hit the URL, we can see that envoy is the one serving the traffic to the user.
 
 ```
 $ curl -I markchur.ch
