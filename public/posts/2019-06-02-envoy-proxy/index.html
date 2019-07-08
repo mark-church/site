@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  
+  <meta name="author"
+        content="Church"/>
+
+  
+  <meta name="description" content="This post began as part 2 but after crossing several pages just explaining what envoy is, it was obvious this answer deserved to stand on its own, giving us part 1.5.
+ In part 1 of this series we deployed a very simple blog with a site generation app called Hugo. We did things quick and dirty and used Hugo&#39;s built-in development server to serve the content so we were live in less than 15 minutes. Calling it a blog at this point in time would be super generous, but thank you anyways! What we have right now is a bicycle, but what we want is an Airbus A380 (on an open source bicycle budget) ."/>
+  
+
+  
+  
+  <meta name="keywords" content="Hugo, theme, zozo"/>
+  
+
+  
+  <link rel="canonical" href="http://markchur.ch/posts/2019-06-02-envoy-proxy/"/>
+
+  
+
+  <title>building a blog part 1.5: what is the envoy proxy? &middot; Mark Church</title>
+
+  <link rel="shortcut icon" href="http://markchur.ch/images/favicon.ico"/>
+  <link rel="stylesheet" href="http://markchur.ch/css/animate.min.css"/>
+  <link rel="stylesheet" href="http://markchur.ch/css/remixicon.css"/>
+  <link rel="stylesheet" href="http://markchur.ch/css/zozo.css"/>
+  <link rel="stylesheet" href="http://markchur.ch/css/highlight.css"/>
+
+  
+  
+</head>
+
+<body>
+<div class="main animated">
+  <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <h1>
+        <a href="http://markchur.ch">
+          <span>Mark Church</span>
+          Mark Church
+        </a>
+      </h1>
+    </div>
+    <div class="description">
+      <p class="sub_title"></p>
+    </div>
+  </div>
+</div>
+
+  <div class="nav_container animated fadeInDown">
+  <div class="site_nav" id="site_nav">
+    <ul>
+      
+      <li>
+        <a href="/">Posts</a>
+      </li>
+      
+      <li>
+        <a href="/tags/">Topics</a>
+      </li>
+      
+      <li>
+        <a href="/about/">About</a>
+      </li>
+      
+      <li>
+        <a href="/links/">Links</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+  <div class="content">
+    <div class="post_page">
+      <div class="post animated">
+        
+
+        <div class="post_title post_detail_title">
+          <h2><a href='/posts/2019-06-02-envoy-proxy/'>building a blog part 1.5: what is the envoy proxy?</a></h2>
+          <span class="date">2019.06.02</span>
+        </div>
+
+
+        <div class="post_footer">
+          
+          <div class="meta">
+            <div class="info">
+              <span class="field tags">
+                <i class="remixicon-stack-line"></i>
+                
+                <a href="http://markchur.ch/tags/technology/">technology</a>
+                
+              </span>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+        <div class="post_content markdown">
+
+<blockquote>
+<p><em>This post began as part 2 but after crossing several pages just explaining what envoy is, it was obvious this answer deserved to stand on its own, giving us part 1.5.</em></p>
+</blockquote>
+
+<p>In part 1 of this series we deployed a very simple blog with a site generation app called Hugo. We did things quick and dirty and used Hugo's built-in development server to serve the content so we were live in less than 15 minutes. Calling it a blog at this point in time would be super generous, but thank you anyways! What we have right now is a bicycle, but what we want is an Airbus A380 (on an open source bicycle budget) . We want a production-grade web service and getting there will be a journey.</p>
+
+<p>I’m starting the journey by introducing out a few important production characteristics through proxying and load balancing. This addition will already make the site much more reliable. It’ll give us the following goodies:</p>
+
+<ul>
+<li>High availability through redundancy</li>
+<li>Resiliency through health checking</li>
+<li>Operational data such as health metrics and client access logging</li>
+<li>Less risky deployments through gradual proxy reconfiguration</li>
+</ul>
+
+<p>These capabilities could be provided through a lot of different tools, so I’ll tell you my real goal: <em>to learn more about the envoy proxy</em>. The envoy proxy is a fairly new open source project and has already received fast adoption (for good reasons). You might be asking, why should I even care about envoy? Well I’m very glad you asked - let me tell you!</p>
+
+<h2 id="why-envoy">Why Envoy?</h2>
+
+<p>Envoy is yet another web proxy, but it does not focus on being a more performant version of its predecessors (like its predecessors were to theirs). Instead, envoy focuses on improving other operational areas. These operational improvements of running a proxy have resulted in innovation of all kinds of seemingly unrelated areas like monitoring, deployment, security, and service discovery. Here are three areas where envoy really excells.</p>
+
+<h3 id="api-driven-configuration">API Driven Configuration</h3>
+
+<p>This is one of the most powerful features of envoy. The state of the envoy configuration, from routing rules, to backend ip:ports, to load balancing algorithms, is configurable through an API rather than text config files (although text is possible). This makes the operation of envoy very different from traditional proxies.</p>
+
+<ul>
+<li>Configuration semantics are tightly defined and segmented so different elements can be updated without touching an entire config</li>
+<li>API versioning and schema reduces disruption from future enhancements to envoy</li>
+<li>The API is native to envoy without external components and designed to be the primary way in which its configured</li>
+<li>The API uses gRPC to communicate with a centralized management server that makes applying config across many proxies more scalable</li>
+</ul>
+
+<p>Nowadays web backends are very dynamic resources themselves. They will scale up and down, change IP addresses, and run across multiple datacenters concurrently. Web proxy configurations must change frequently to handle this and text-based configuration is just not automatable enough.</p>
+
+<p>To give an example for why this has been difficult in the past, just take a look at the number of different kubernetes <a href="https://github.com/kubernetes/ingress-nginx">nginx</a> <a href="https://github.com/nginxinc/kubernetes-ingress">ingress</a> <a href="https://github.com/ehazlett/interlock">controllers</a> that exist to solve the fundamentally the same problem. They are taking a standard API (the K8s ingress API) and translating it to a templated text file for the web proxy to consume. Templating and applying these config files turns out to be cumbersome which reduces the scale that it can be done at.  (No dig against nginx - these controllers were solving for dynamic configuration long before envoy even existed).</p>
+
+<p>With envoy’s API, dynamic control of the proxy is straightforward, standardized, and scalable. The ability to fully automate a control-plane across a fleet of proxies (i.e. service mesh) is much more realistic thanks to this.</p>
+
+<p>Machine friendly configuration has opened up a whole list of projects that are now building around envoy, in no small part because it’s easy to build around. This includes projects like Istio, Gloo, Ambassador, Contour, and Consul Connect - all designed as control-planes for Envoy. Administrators, orchestration tools (like Consul or K8s), and potentially applications themselves can have the capability to easily manipulate routing.</p>
+
+<div align="center">
+<img style="max-width:100%" src="/images/envoy-config.png">
+</div>
+
+<h3 id="hot-restart-live-reload">Hot Restart / Live Reload</h3>
+
+<p>Hot restart allows the envoy process to restart or without dropping any connections. This enables configuration changes without impacting any traffic. Envoy actually takes this to an extreme and is capable of restarting the entire envoy process without dropping any connections. In a nutshell it runs two envoy processes in parallel as they communicate running state to each other. New connections are taken by the new process while old connections are drained by the old process while retaining all state (including metrics).</p>
+
+<p>While API-based configuration is rad, hot restarts are also a requirement to run a truly dynamic proxy. Together these two features are what make envoy great for dynamic networking.</p>
+
+<h3 id="modern-protocols-other-cool-stuff">Modern Protocols &amp; Other Cool Stuff</h3>
+
+<p>The list is long, but by virtue of being the new kid on the block, envoy natively supports tons of modern protocols including HTTP2 and gRPC. Envoy shows its youth by using a lot of modern day standards. The load balancing is also very configurable. Envoy can be zone-aware and load balance based on customizable combinations of factors such as locality, priority, and health. Then there are also the little conveniences like access logs output in JSON that are nice.</p>
+
+<p>Okay that’s enough gushing for now. In part 2 we’ll deploy envoy as a proxy for this site and start using some of its features. Here are some final thoughts.</p>
+
+<ul>
+<li>Web proxying and load balancing are critical aspects of making environments production-ready</li>
+<li>Environments are only getting more dynamic and ephemeral so proxies are adapting to become more dynamic and automatable</li>
+<li><em>Envoy is great at both of these ^^</em></li>
+</ul>
+
+<p>Here are some resources I read through while writing this:</p>
+
+<ul>
+<li><a href="https://www.envoyproxy.io/docs/envoy/latest/">Envoy project docs</a></li>
+<li><a href="https://blog.envoyproxy.io/envoy-hot-restart-1d16b14555b5">Envoy hot restart blog post</a></li>
+<li><a href="https://www.envoyproxy.io/learn/">Learning Envoy</a></li>
+<li><a href="https://medium.com/@salmaan.rashid/envoy-discovery-hello-world-d3e44d19603d">Envoy API “hello world”</a></li>
+</ul>
+</div>
+        <div class="post_footer">
+          
+          <div class="meta">
+            <div class="info">
+              <span class="field tags">
+                <i class="remixicon-stack-line"></i>
+                
+                <a href="http://markchur.ch/tags/technology/">technology</a>
+                
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  <a id="back_to_top" href="#" class="back_to_top"><span></span></a>
+</div>
+<footer class="footer">
+  <div class="powered_by">
+    <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+  </div>
+
+  <div class="footer_slogan">
+    <span></span>
+  </div>
+</footer>
+
+
+
+<script src="http://markchur.ch/js/jquery-3.3.1.min.js"></script>
+<script src="http://markchur.ch/js/zozo.js"></script>
+<script src="http://markchur.ch/js/highlight.pack.js"></script>
+<link  href="http://markchur.ch/css/fancybox.min.css" rel="stylesheet">
+<script src="http://markchur.ch/js/fancybox.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+
+
+
+
+
+</body>
+</html>

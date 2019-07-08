@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://markchur.ch/</loc>
+    <lastmod>2019-07-07T01:01:19-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/posts/</loc>
+    <lastmod>2019-07-07T01:01:19-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/tags/</loc>
+    <lastmod>2019-07-07T01:01:19-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/posts/2019-07-07-deploying-envoy/</loc>
+    <lastmod>2019-07-07T01:01:19-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/tags/technology/</loc>
+    <lastmod>2019-07-07T01:01:19-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/posts/2019-06-02-envoy-proxy/</loc>
+    <lastmod>2019-06-02T01:01:19-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/posts/2019-05-20-building-a-blog-part-1/</loc>
+    <lastmod>2019-05-20T01:01:19-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/posts/2018-12-10-college-major-stress/</loc>
+    <lastmod>2018-12-10T14:35:19-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/tags/life/</loc>
+    <lastmod>2018-12-10T14:35:19-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/about/</loc>
+    <lastmod>2018-12-02T20:24:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/links/</loc>
+    <lastmod>2018-12-02T20:24:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://markchur.ch/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
